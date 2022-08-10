@@ -9,7 +9,7 @@ const Buttons = ({ setData }: ButtonsProps): JSX.Element => {
 
   const onClick = async (event: React.MouseEvent<HTMLButtonElement>): Promise<void> => {
     const value = ((event.target) as HTMLButtonElement).value;
-    const data = await (await fetch(`http://localhost:3001/track-points/${value}`)).json();
+    const data = await (await fetch(`http://localhost:8080/track-points/${value}`)).json();
     setData(data);
   }
 

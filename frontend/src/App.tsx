@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import Buttons from './Buttons';
-import Chart from './Chart';
+// import Chart from './Chart';
 
 import './App.css';
 
@@ -12,6 +12,7 @@ const App = (): JSX.Element => {
     <div className="App">
       <h1>App</h1>
       <Buttons setData={setData}></Buttons>
+      <div>{data.toString()}</div>
       {/* <Chart></Chart> */}
     </div>
   );
