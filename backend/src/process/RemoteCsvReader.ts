@@ -1,17 +1,15 @@
-import axios from 'axios';
+// import axios from 'axios';
 
-interface RemoteCsv {
+// interface RemoteCsv {
+//   data: string
+// }
 
-}
+// export class RemoteCsvReader {
+//   constructor(public url: string) { }
 
-export class RemoteCsvReader {
-  constructor(public url: string) { }
-
-  async read(): Promise<any> {
-    const res = await axios.get(this.url);
-
-    console.log(res);
-    return res
-  }
-}
+//   async read(): Promise<RemoteCsv> {
+//     const res = await axios.get(this.url);
+//     return res
+//   }
+// }
 
