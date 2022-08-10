@@ -9,7 +9,6 @@ import { Processor } from './process/Processor';
 // const url = 'https://numina-take-home-interview.s3.us-east-2.amazonaws.com/data.csv';
 const path = './src/data/data.csv';
 
-// const data = new LocalCsvReader(path).read();
 const app = express();
 app.use(cors());
 
