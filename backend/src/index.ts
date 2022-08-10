@@ -1,4 +1,6 @@
 import express, { Request, Response } from 'express';
+import cors from 'cors';
+
 // import { RemoteCsvReader } from "./process/RemoteCsvReader";
 import { LocalCsvReader } from "./process/LocalCsvReader";
 import { SensorProcessor } from "./process/SensorProcessor";
@@ -9,6 +11,7 @@ const path = './src/data/data.csv';
 
 // const data = new LocalCsvReader(path).read();
 const app = express();
+app.use(cors());
 
 app.get('/track-points/:trackId', (req: Request, res: Response): void => {
   const localCsvReader = new LocalCsvReader(path);
