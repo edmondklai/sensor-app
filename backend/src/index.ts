@@ -22,6 +22,6 @@ app.get('/track-points/:trackId', (req: Request, res: Response): void => {
   res.send(points);
 })
 
-app.listen(3001, () => {
-  console.log('listening on 3001')
+app.listen(8080, () => {
+  console.log('listening on 8080')
 })
