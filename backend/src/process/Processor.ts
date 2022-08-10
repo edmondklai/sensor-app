@@ -12,11 +12,9 @@ interface DataProcessor {
 export class Processor {
   data: string = '';
   processedData: SensorData[] = [];
-  constructor(public reader: Reader, public processor: DataProcessor) {
+  constructor(public reader: Reader, public processor: DataProcessor) { }
 
-  }
-
-  process() {
+  process(): void {
     this.data = this.reader.read();
     this.processedData = this.processor.process(this.data);
   }
